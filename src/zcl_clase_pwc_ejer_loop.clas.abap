@@ -60,13 +60,13 @@ out->write( data = lt_agency name = 'lt_agency_inicio' ).
 out->write( |\n| ).
 out->write( |\n| ).
 
-LOOP AT LT_agency ASSIGNING FIELD-SYMBOL(<fs_agency>) where country_code <> 'DE' AND web_address cp 'tour'.
+LOOP AT LT_agency ASSIGNING FIELD-SYMBOL(<fs_agency>) where country_code <> 'DE' AND web_address cp '*tour*'.
 
-"<fs_flight>-email_address = 'aculta@demo.com'.
-out->write( data = <fs_agency> name = '<fs_flight>' ).
+<fs_agency>-email_address = 'aculta@demo.com'.
+"out->write( data = <fs_agency> name = '<fs_agency>' ).
 
 ENDLOOP.
-
+out->write( data = lt_agency name = 'lt_agency_fin' ).
 ENDMETHOD.
 
 ENDCLASS.
