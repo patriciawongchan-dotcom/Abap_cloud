@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_14 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_14 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_14 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     DATA(lv_string) = 'daniel Fernando Pedro ramon Sergio'.
 
@@ -82,5 +86,4 @@ CLASS zcl_clase_pwc_14 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

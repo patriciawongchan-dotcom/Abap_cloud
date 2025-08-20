@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_ejer_estruc2 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_ejer_estruc2 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_EJER_ESTRUC2 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
    TYPES: BEGIN OF ty_nave,
@@ -132,8 +136,4 @@ out->write( 'Misión a Marte en condiciones óptimas' ).
 
 ENDIF.
   ENDMETHOD.
-
-
-
-
 ENDCLASS.

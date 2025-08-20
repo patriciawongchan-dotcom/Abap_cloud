@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_11 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_11 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_11 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 DATA lv_string TYPE string VALUE 'daniel Fernando Pedro Ramon'.
@@ -26,5 +30,4 @@ out->write( lv_string  ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

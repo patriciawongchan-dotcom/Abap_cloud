@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_10 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_10 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_10 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 DATA: lv_string type string VALUE '¡EXPERIS! Welcome to ABAP Cloud Master',
@@ -70,5 +74,4 @@ out->write( |to_upper = { to_upper( lv_cadena ) } |  ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

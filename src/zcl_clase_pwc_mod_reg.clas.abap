@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_mod_reg DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_mod_reg IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_MOD_REG IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 SELECT FROM /dmo/flight
 fields *
@@ -67,5 +71,4 @@ ENDLOOP.
 out->write( data = lt_flights NAME = 'DESPUES / lt_flights' ).
 
 ENDMETHOD.
-
 ENDCLASS.

@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_overlay DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_overlay IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_OVERLAY IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 Data: lv_string type string value 'a.b.c.a.b.c.A',
@@ -24,5 +28,4 @@ Data: lv_string type string value 'a.b.c.a.b.c.A',
 out->write( lv_string ).
 
 ENDMETHOD.
-
 ENDCLASS.

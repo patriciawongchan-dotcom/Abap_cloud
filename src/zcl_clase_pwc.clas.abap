@@ -13,11 +13,14 @@ CLASS zcl_clase_pwc DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 out->write( 'Hola mundo' ).
 
 ENDMETHOD.
-
 ENDCLASS.

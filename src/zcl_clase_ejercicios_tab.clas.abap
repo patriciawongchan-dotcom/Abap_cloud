@@ -13,7 +13,11 @@ CLASS zcl_clase_ejercicios_tab DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_ejercicios_tab IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_EJERCICIOS_TAB IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 * EJERCICIO 1
@@ -108,15 +112,50 @@ SELECT FROM /dmo/connection
   INTO TABLE @DATA(MT_ARILINES).
 
 
- out->write( MT_ARILINES ).
+ "out->write( MT_ARILINES ).
 
 **********************************************************************
 *EJECICIO 4
 
 SORT MT_ARILINES BY CONNECTION_ID DESCENDING.
+"out->write( MT_ARILINES ).
+
+**********************************************************************
+*EJERCICIO 5
+
+SELECT FROM /DMO/CONNECTION
+FIELDS *
+WHERE departure_time > '120000'
+INTO TABLE @DATA(lt_connect).
+
+out->write( data = lt_connect name = 'EJERCICIO 5' ).
+
+LOOP AT lt_connect INTO DATA(ls_CONNECT).
+
+MODIFY lT_connect FROM VALUE #( departure_time = cl_abap_context_info=>get_system_time( ) ) TRANSPORTING departure_time .
+
+ENDLOOP.
+"out->write( data = lt_connect name = ' SOLUCION EJERCICIO 5' ).
+
+**********************************************************************
+*EJERCICIO 6
+
+delete lt_connect where airport_to_id = 'FRA'.
+
+
+"out->write( data = lt_connect name = ' SOLUCION EJERCICIO 6' ).
+
+
+**********************************************************************
+*EJERCICIO7
+clear MT_ARILINES.
+
+out->write( MT_ARILINES ).
+
+free MT_ARILINES.
+
 out->write( MT_ARILINES ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

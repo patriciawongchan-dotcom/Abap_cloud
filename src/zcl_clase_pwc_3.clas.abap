@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_3 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_3 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_3 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 *    DATA: lv_string TYPE string VALUE ' Hola ',
@@ -112,5 +116,4 @@ lv_numf = lv_num2 / lv_num1.
 *    out->write( | Oper { lv_num2 } / { lv_num1 } = { lv_num3 } | ).
 
   ENDMETHOD.
-
 ENDCLASS.

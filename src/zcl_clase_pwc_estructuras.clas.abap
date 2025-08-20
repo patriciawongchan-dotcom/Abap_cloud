@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_estructuras DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_estructuras IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_ESTRUCTURAS IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 
@@ -234,5 +238,4 @@ out->write(  data = ls_flight2  name = 'ls_flight2' ).
 
 
   ENDMETHOD.
-
 ENDCLASS.

@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_4 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_4 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_4 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 DATA:     lv_date   TYPE d,
@@ -50,5 +54,4 @@ out->write( lv_contador ).
 *     out->write( lv_mes ).
 
 ENDMETHOD.
-
 ENDCLASS.

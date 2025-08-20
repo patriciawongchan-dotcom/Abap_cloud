@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_tablas DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_tablas IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_TABLAS IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *TYPES: BEGIN OF ty_persona,
@@ -148,5 +152,4 @@ out->write( lt_persona ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

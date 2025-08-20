@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_split DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_split IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_SPLIT IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 DATA(lv_string) = 'daniel Fernando Pedro ramon Sergio'.
@@ -35,5 +39,4 @@ out->write( lv_nombre5 ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

@@ -13,8 +13,9 @@ CLASS zcl_clase_pwc_9 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_9 IMPLEMENTATION.
 
+
+CLASS ZCL_CLASE_PWC_9 IMPLEMENTATION.
 
 
 METHOD if_oo_adt_classrun~main.
@@ -33,5 +34,4 @@ out->write( lv_dec ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

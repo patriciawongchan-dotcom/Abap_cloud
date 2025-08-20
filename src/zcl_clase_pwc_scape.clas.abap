@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_scape DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_scape IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_SCAPE IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 "scape URL
@@ -22,5 +26,4 @@ data(lv_url) =  escape( val = 'El perro corre por el campo' format = cl_abap_for
 out->write( lv_url ).
 
 ENDMETHOD.
-
 ENDCLASS.

@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_ejer_estructuras DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_ejer_estructuras IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_EJER_ESTRUCTURAS IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 *crear tres estructuras de las tres maneras que hemos visto  ls_estructura1 ,  ls_estructura2 y  ls_estructura3.
@@ -88,5 +92,4 @@ CLASS zcl_clase_pwc_ejer_estructuras IMPLEMENTATION.
     out->write( |\n| ).
     out->write( ls_animal4 ).
   ENDMETHOD.
-
 ENDCLASS.

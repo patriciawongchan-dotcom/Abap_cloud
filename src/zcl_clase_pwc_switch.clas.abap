@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_switch DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_switch IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_SWITCH IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 do 6 times.
@@ -24,5 +28,4 @@ DATA(lv_value) = SWITCH #( sy-index when 1 then |iteracion 1|
 out->write( lv_value ).
 ENDDO.
 ENDMETHOD.
-
 ENDCLASS.

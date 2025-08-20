@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_group_by DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_group_by IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_GROUP_BY IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 "agrupar registros
@@ -46,5 +50,4 @@ METHOD if_oo_adt_classrun~main.
     ENDLOOP.
 
 ENDMETHOD.
-
 ENDCLASS.

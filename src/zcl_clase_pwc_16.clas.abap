@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_16 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_16 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_16 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
    " Declaramos la cadena original con los nombres separados por espacios
@@ -81,5 +85,4 @@ ENDDO.
 *
 *
 ENDMETHOD.
-
 ENDCLASS.

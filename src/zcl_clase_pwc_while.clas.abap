@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_while DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_while IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_WHILE IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA lv_num TYPE i.
@@ -31,5 +35,4 @@ ENDWHILE.
 
 
     ENDMETHOD.
-
 ENDCLASS.

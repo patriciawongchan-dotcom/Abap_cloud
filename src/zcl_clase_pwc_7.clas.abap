@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_7 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_7 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_7 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 CONSTANTS: lc_pi type p DECIMALS 2 VALUE '3.14'.
@@ -30,5 +34,4 @@ out->write( lv_area ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

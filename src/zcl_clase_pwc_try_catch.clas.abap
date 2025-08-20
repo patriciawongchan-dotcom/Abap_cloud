@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_try_catch DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_try_catch IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_TRY_CATCH IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 try.
@@ -30,5 +34,4 @@ out->write( 'ERROR: no se puede realizar esta operacion' ).
 
 ENDTRY.
 ENDMETHOD.
-
 ENDCLASS.

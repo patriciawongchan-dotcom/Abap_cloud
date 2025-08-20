@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_ejer_for DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_ejer_for IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_EJER_FOR IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     TYPES: BEGIN OF ty_flights,
@@ -139,5 +143,4 @@ CLASS zcl_clase_pwc_ejer_for IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

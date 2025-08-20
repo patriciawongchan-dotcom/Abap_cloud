@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_select DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_select IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_SELECT IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 SELECT FROM /dmo/flight
@@ -35,5 +39,4 @@ out->write( data = lt_flights_copy name = 'lt_flights_copy' ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

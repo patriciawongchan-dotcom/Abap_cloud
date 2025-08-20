@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_do_end_do DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_do_end_do IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_DO_END_DO IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 DATA(lv_num) = 0.
@@ -28,5 +32,4 @@ ENDDO.
 
 
 ENDMETHOD.
-
 ENDCLASS.

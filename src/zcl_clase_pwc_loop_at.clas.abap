@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_loop_at DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_loop_at IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_LOOP_AT IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *DATA: lt_flight type /dmo/flight,
@@ -71,5 +75,4 @@ out->write( data = lt_flights name = 'lt_flights' ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

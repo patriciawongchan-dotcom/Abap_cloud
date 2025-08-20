@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_tablas1 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_tablas1 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_TABLAS1 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     TYPES: BEGIN OF ty_libro,
@@ -69,5 +73,4 @@ CLASS zcl_clase_pwc_tablas1 IMPLEMENTATION.
 *ENDLOOP.
 out->write( lt_libros ).
   ENDMETHOD.
-
 ENDCLASS.

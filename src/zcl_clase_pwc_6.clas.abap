@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_6 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_6 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_6 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 CONSTANTS: lc_pais type string value 'España',
@@ -31,5 +35,4 @@ out->write( lc_iva ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

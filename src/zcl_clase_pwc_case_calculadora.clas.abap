@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_case_calculadora DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_case_calculadora IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_CASE_CALCULADORA IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA(lv_alea) = cl_abap_random_int=>create( seed = cl_abap_random=>seed(  ) min = 1 max = 4 )->get_next(  ).
@@ -59,5 +63,4 @@ out->write( 'MULTIPLICACION' ).
 
 
   ENDMETHOD.
-
 ENDCLASS.

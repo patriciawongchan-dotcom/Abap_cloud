@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_15 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_15 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_15 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
    DATA: lv_nombre TYPE string VALUE 'Daniel',
@@ -42,5 +46,4 @@ ENDIF.
 
 
 ENDMETHOD.
-
 ENDCLASS.

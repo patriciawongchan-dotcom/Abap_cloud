@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_2 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_2 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_2 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA: lv_string TYPE string value ' Hola ' ,
@@ -48,5 +52,4 @@ lv_time = cl_abap_context_info=>get_user_time_zone( ).
 out->write( lv_time ).
 
 ENDMETHOD.
-
 ENDCLASS.

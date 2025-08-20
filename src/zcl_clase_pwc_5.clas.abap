@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_5 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_5 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_5 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA: lv_text TYPE string.
@@ -24,5 +28,4 @@ CLASS zcl_clase_pwc_5 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

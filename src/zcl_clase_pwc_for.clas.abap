@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_for DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_for IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_FOR IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *SELECT FROM /dmo/agency
@@ -64,5 +68,4 @@ out->write( data = lt_my_flights name = 'lt_my_flights' ).
 out->write( lt_flights_info ).
 
 ENDMETHOD.
-
 ENDCLASS.

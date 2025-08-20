@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_insert DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_insert IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_INSERT IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 data: lv_var1 type string value '123cliente01',
@@ -24,5 +28,4 @@ data: lv_var1 type string value '123cliente01',
 out->write( lv_ins_string ).
 
 ENDMETHOD.
-
 ENDCLASS.

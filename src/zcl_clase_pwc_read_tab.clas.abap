@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_read_tab DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_read_tab IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_READ_TAB IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *SELECT from /dmo/airport
@@ -67,5 +71,4 @@ DATA(ls_flight2) = lt_flights[ airport_id = 'MUC' ]-name.
 out->write( data = ls_flight2 name = 'ls_flight2' ).
 
 ENDMETHOD.
-
 ENDCLASS.

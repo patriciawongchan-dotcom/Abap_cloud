@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_clase_pwc_1 IMPLEMENTATION.
+CLASS ZCL_CLASE_PWC_1 IMPLEMENTATION.
+
 
 METHOD if_oo_adt_classrun~main.
 
@@ -26,5 +27,4 @@ lv_alumno =  'Pipo'.
 out->write(  lv_alumno ).
 
 ENDMETHOD.
-
 ENDCLASS.

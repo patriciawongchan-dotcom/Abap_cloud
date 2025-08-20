@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_concatenar DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_concatenar IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_CONCATENAR IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 data: lv_string_a type string value 'hola, que tal estas?',
@@ -59,5 +63,4 @@ out->write( lv_string_itab ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_ejer_loop DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_ejer_loop IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_EJER_LOOP IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *Enunciado del ejercicio: Anonimización de agencias de viajes
@@ -68,5 +72,4 @@ LOOP AT LT_agency ASSIGNING FIELD-SYMBOL(<fs_agency>) where country_code <> 'DE'
 ENDLOOP.
 out->write( data = lt_agency name = 'lt_agency_fin' ).
 ENDMETHOD.
-
 ENDCLASS.

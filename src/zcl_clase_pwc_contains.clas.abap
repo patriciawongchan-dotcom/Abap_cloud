@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_contains DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_contains IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_CONTAINS IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 data(lv_text) = 'El telefono del empleado es 688-365-987 el correo electronico es daniel.elviraruiz@experis.es'.
 "para el telefono
@@ -34,5 +38,4 @@ ENDIF.
 
 
 ENDMETHOD.
-
 ENDCLASS.

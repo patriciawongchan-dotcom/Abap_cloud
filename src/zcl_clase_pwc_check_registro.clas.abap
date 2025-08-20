@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_check_registro DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_check_registro IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_CHECK_REGISTRO IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 " VERIFICA SI EXISTE UN REGISTRO
@@ -71,5 +75,4 @@ out->write( data = lv_num name = 'lv_num' ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

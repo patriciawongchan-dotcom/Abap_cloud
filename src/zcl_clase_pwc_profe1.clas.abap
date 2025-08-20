@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_profe1 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_profe1 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_PROFE1 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 
@@ -96,5 +100,4 @@ METHOD if_oo_adt_classrun~main.
 
 
 ENDMETHOD.
-
 ENDCLASS.

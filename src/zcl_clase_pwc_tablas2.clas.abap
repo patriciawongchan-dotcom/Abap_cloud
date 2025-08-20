@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_tablas2 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_tablas2 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_TABLAS2 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 TYPES :BEGIN OF ty_flights,
@@ -47,5 +51,4 @@ out->write( data = lt_my_flights name = 'TABLA LT_MY_FLIGHTS' ).
 
 
 ENDMETHOD.
-
 ENDCLASS.

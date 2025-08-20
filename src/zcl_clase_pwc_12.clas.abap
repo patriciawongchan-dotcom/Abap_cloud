@@ -13,7 +13,11 @@ CLASS zcl_clase_pwc_12 DEFINITION
 
 ENDCLASS.
 
-CLASS zcl_clase_pwc_12 IMPLEMENTATION.
+
+
+CLASS ZCL_CLASE_PWC_12 IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
 *El programa debe:
@@ -62,5 +66,4 @@ DATA(lv_cantidad) = numofchar( lv_texto ).
 out->write( |Cantidad de caracteres: { lv_cantidad }| ).
 
 ENDMETHOD.
-
 ENDCLASS.
