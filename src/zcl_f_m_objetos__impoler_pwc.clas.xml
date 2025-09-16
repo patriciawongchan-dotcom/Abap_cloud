@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_PWC_PLANTILLA</CLSNAME>
+    <CLSNAME>ZCL_F_M_OBJETOS__IMPOLER_PWC</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>PLANTILLA</DESCRIPT>
+    <DESCRIPT>generamos el objeto</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

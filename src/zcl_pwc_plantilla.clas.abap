@@ -1,14 +1,27 @@
-class ZCL_PWC_PLANTILLA definition
-  public
-  final
-  create public .
+CLASS zcl_pwc_plantilla DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+
+  INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_PWC_PLANTILLA IMPLEMENTATION.
-ENDCLASS.
+CLASS zcl_pwc_plantilla IMPLEMENTATION.
+METHOD if_oo_adt_classrun~main.
+
+DATA :        NUM_REG TYPE I VALUE 2.
+
+SELECT * FROM ztab_emp_pwc
+INTO TABLE @data(lt_REG)
+UP TO  2 ROWS.
+
+OUT->write( lt_REG ).
+ENDMETHOD.
+
+ENDCLASS..

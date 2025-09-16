@@ -18,11 +18,44 @@ METHOD if_oo_adt_classrun~main.
 **********************************************************************
 *MODIFICACION DE UN UNICO REGISTRO CON EL MODIFY
 
-DATA(LS_AIRLINE) = VALUE ZTAB_CARRIER_PWC( CARRIER_ID = 'UA'
-                                            NAME = 'WIZZ AIR'
-                                            CURRENCY_CODE = 'USD' ).
+*DATA(LS_AIRLINE) = VALUE ZTAB_CARRIER_PWC( CARRIER_ID = 'UA'
+*                                            NAME = 'WIZZ AIR'
+*                                            CURRENCY_CODE = 'USD' ).
+*
+*MODIFY ZTAB_CARRIER_PWC FROM @LS_AIRLINE.
+*
+*if  SY-subrc = 0.
+* out->write( 'EL REGISTRO HA SIDO INTRODUCIDO/MODIFICADO' ).
+*
+*ELSE.
+*
+*out->write( 'NO EJECUTADO' ).
+*
+*ENDIF.
 
-MODIFY ZTAB_CARRIER_PWC FROM @LS_AIRLINE.
+**********************************************************************
+*MODIFICAR/ACTUALIZAR MULTIPLES REGISTROS
+
+CONSTANTS LC_CURRENCY TYPE c LENGTH 3 VALUE 'EUR'.
+
+
+
+SELECT FROM ZTAB_CARRIER_PWC
+FIELDS *
+WHERE CARRIER_ID = 'LH'
+OR CARRIER_ID = 'AF'
+INTO TABLE @data(LT_AIRLINES).
+
+if  SY-subrc = 0.
+
+LOOP AT LT_AIRLINES ASSIGNING FIELD-SYMBOL(<FS_AIRLINE>).
+<FS_AIRLINE>-CURRENCY_CODE = LC_CURRENCY.
+ENDLOOP.
+
+APPEND VALUE #( CARRIER_ID = 'AV'
+                NAME = 'AVIANCA'
+                CURRENCY_CODE = 'COP') TO LT_AIRLINES.
+MODIFY ZTAB_CARRIER_PWC FROM TABLE @LT_AIRLINES.
 
 if  SY-subrc = 0.
  out->write( 'EL REGISTRO HA SIDO INTRODUCIDO/MODIFICADO' ).
@@ -32,6 +65,28 @@ ELSE.
 out->write( 'NO EJECUTADO' ).
 
 ENDIF.
+
+ELSE.
+
+SELECT FROM /DMO/I_CARRIER
+FIELDS AirlineID AS CARRIER_ID, CurrencyCode AS CURRENCY_CODE, Name
+WHERE AirlineID = 'LH'
+OR AirlineID = 'AF'
+INTO CORRESPONDING FIELDS OF TABLE @LT_AIRLINES.
+
+MODIFY ZTAB_CARRIER_PWC FROM TABLE @LT_AIRLINES.
+
+if  SY-subrc = 0.
+ out->write( 'REGISTRO MODIFICADO DEL ORIGINAL' ).
+
+ELSE.
+
+out->write( 'NO EJECUTADO' ).
+
+ENDIF.
+
+
+       ENDIF.
 
 
 

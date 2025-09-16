@@ -1,0 +1,21 @@
+CLASS zcl_05_class_pwc DEFINITION INHERITING FROM zcl_04_class_pwc
+  PUBLIC
+*  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  METHODS CONSTRUCTOR IMPORTING IV_QUOTATION TYPE STRING
+                               IV_PRODUCTS TYPE STRING.
+  DATA PRODUCTS TYPE STRING READ-ONLY.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+CLASS zcl_05_class_pwc IMPLEMENTATION.
+ METHOD constructor.
+
+    super->constructor( iv_quotation = iv_quotation ).
+    ME->products = IV_PRODUCTS.
+  ENDMETHOD.
+ENDCLASS.

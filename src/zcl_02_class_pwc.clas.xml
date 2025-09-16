@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_PWC_PLANTILLA</CLSNAME>
+    <CLSNAME>ZCL_02_CLASS_PWC</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>PLANTILLA</DESCRIPT>
+    <DESCRIPT>FABRICA clase 02 crear una tabla con clases</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
