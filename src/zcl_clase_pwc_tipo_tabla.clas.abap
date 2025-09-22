@@ -1,43 +1,13 @@
-CLASS zcl_clase_pwc_tipo_tabla DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_CLASE_PWC_TIPO_TABLA definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  INTERFACES if_oo_adt_classrun.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_CLASE_PWC_TIPO_TABLA IMPLEMENTATION.
-
-
-METHOD if_oo_adt_classrun~main.
-
-DATA: LT_TABLA_DIC_DATOS TYPE  ZTT_EMPLEADO_TAB,
-       LS_ESTRUCTURA_DIC_DATOS TYPE zst_empleados_pwc.
-
-LS_ESTRUCTURA_DIC_DATOS-employee_id = |00001|.
-LS_ESTRUCTURA_DIC_DATOS-category = 'S'.
-LS_ESTRUCTURA_DIC_DATOS-fisrt_name = 'PACO'.
-LS_ESTRUCTURA_DIC_DATOS-last_name = 'PEREZ'.
-LS_ESTRUCTURA_DIC_DATOS-start_date = '20251010'.
-
-
-
-
-out->write( LS_ESTRUCTURA_DIC_DATOS ).
-
-
-
-out->write( LT_TABLA_DIC_DATOS ).
-
-
-ENDMETHOD.
 ENDCLASS.

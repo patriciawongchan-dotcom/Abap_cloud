@@ -1,83 +1,13 @@
-CLASS zcl_pwc_delete DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_PWC_DELETE definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  INTERFACES if_oo_adt_classrun.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_pwc_delete IMPLEMENTATION.
-METHOD if_oo_adt_classrun~main.
-**********************************************************************
-*BORRADO DE UN REGISTRO BUSCANDOLO EN LA TABLA
-
-*SELECT SINGLE FROM ZTAB_CARRIER_PWC
-*FIELDS *
-*WHERE CARRIER_ID = 'UA'
-*INTO @DATA(LS_AIRLINE).
-*
-*IF SY-subrc = 0.
-*
-*DELETE ZTAB_CARRIER_PWC FROM @LS_AIRLINE.
-*
-*IF SY-subrc = 0.
-*out->write( 'REGISTRO BORRADO').
-*ENDIF.
-*
-*ENDIF.
-
-**********************************************************************
-*BORRADO ASIGNANDO VALOR DE FORMA DIRECTA
-
-*DATA(LS_AIRLINE2) = VALUE ZTAB_CARRIER_PWC( CARRIER_ID = 'WZ' ).
-*DELETE ZTAB_CARRIER_PWC FROM @LS_AIRLINE2.
-*
-*if  SY-subrc = 0.
-* out->write( 'REGISTRO 2 BORRADO' ).
-*
-*ELSE.
-*
-*out->write( 'NO EJECUTADO' ).
-*
-*ENDIF.
-
-**********************************************************************
-*
-
-DATA LT_AIRLINES TYPE STANDARD TABLE OF ZTAB_CARRIER_PWC.
-
-SELECT FROM ZTAB_CARRIER_PWC
-FIELDS *
-WHERE CURRENCY_CODE = 'EUR'
-INTO TABLE @LT_AIRLINES.
-
-IF SY-SUBRC = 0.
-
-DELETE ZTAB_CARRIER_PWC FROM TABLE @LT_AIRLINES.
-
-IF SY-SUBRC = 0.
-
-out->write( 'REGISTROS BORRADO' ).
-
-ELSE.
-
-out->write( 'REGISTROS NO BORRADO' ).
-ENDIF.
-
-ELSE.
-
-out->write( 'REGISTROS NO ENCONTRADO' ).
-ENDIF.
-
-
-
-
-ENDMETHOD.
-
-ENDCLASS..
+CLASS ZCL_PWC_DELETE IMPLEMENTATION.
+ENDCLASS.

@@ -1,14 +1,13 @@
-CLASS zcl_06_class_pwc DEFINITION INHERITING FROM zcl_05_class_pwc
-  PUBLIC
+class ZCL_06_CLASS_PWC definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_06_class_pwc IMPLEMENTATION.
+CLASS ZCL_06_CLASS_PWC IMPLEMENTATION.
 ENDCLASS.

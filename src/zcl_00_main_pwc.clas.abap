@@ -1,30 +1,13 @@
-CLASS zcl_00_main_pwc DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_00_MAIN_PWC definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  INTERFACES if_oo_adt_classrun.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_00_main_pwc IMPLEMENTATION.
-METHOD if_oo_adt_classrun~main.
-
-    DATA(LO_EMPLOYEE) = NEW zcl_01_class_pwc( IV_EMPLOYEE_ID = '01' ).
-
-    OUT->write( LO_EMPLOYEE->get_employee( ) ).
-
-
-
-
-
-
-
-
-ENDMETHOD.
-
+CLASS ZCL_00_MAIN_PWC IMPLEMENTATION.
 ENDCLASS.

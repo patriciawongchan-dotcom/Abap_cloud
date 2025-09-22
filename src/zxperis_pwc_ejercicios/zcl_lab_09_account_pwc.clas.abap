@@ -1,27 +1,13 @@
-CLASS zcl_lab_09_account_pwc DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_09_ACCOUNT_PWC definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  METHODS : SET_IBAN IMPORTING IBAN TYPE STRING,
-            GET_IBAN EXPORTING IBAN TYPE STRING.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-  DATA IBAN TYPE STRING.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_lab_09_account_pwc IMPLEMENTATION.
-  METHOD get_iban.
-IBAN = ME->iban.
-  ENDMETHOD.
-
-  METHOD set_iban.
-ME->iban = IBAN.
-  ENDMETHOD.
-
+CLASS ZCL_LAB_09_ACCOUNT_PWC IMPLEMENTATION.
 ENDCLASS.

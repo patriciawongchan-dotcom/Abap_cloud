@@ -1,41 +1,13 @@
-CLASS zcl_lab_04_person_pwc DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB_04_PERSON_PWC definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  METHODS SET_AGE
-  IMPORTING IV_AGE TYPE I.
-
-  METHODS GET_AGE
-  EXPORTING EV_AGE TYPE I.
-
-
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-  DATA AGE TYPE I.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_lab_04_person_pwc IMPLEMENTATION.
-
-   METHOD set_age.
-  ME->AGE = IV_AGE.
-    ENDMETHOD.
-
-
-  METHOD get_age.
-
-  EV_AGE = AGE + 10.
-
-  ENDMETHOD.
-
-
-
-
-
-
+CLASS ZCL_LAB_04_PERSON_PWC IMPLEMENTATION.
 ENDCLASS.

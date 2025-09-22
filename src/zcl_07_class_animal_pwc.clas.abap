@@ -1,19 +1,13 @@
-CLASS zcl_07_class_animal_pwc DEFINITION
-  PUBLIC
+class ZCL_07_CLASS_ANIMAL_PWC definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-  METHODS WALK RETURNING VALUE(RV_WALK) TYPE STRING.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_07_class_animal_pwc IMPLEMENTATION.
-  METHOD walk.
-    RV_WALK ='EL ANIMAL ANDA'.
-  ENDMETHOD.
-
+CLASS ZCL_07_CLASS_ANIMAL_PWC IMPLEMENTATION.
 ENDCLASS.

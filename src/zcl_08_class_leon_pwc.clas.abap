@@ -1,19 +1,13 @@
-CLASS zcl_08_class_leon_pwc DEFINITION INHERITING FROM zcl_07_class_animal_pwc
-  PUBLIC
+class ZCL_08_CLASS_LEON_PWC definition
+  public
+  create private .
 
-  CREATE PUBLIC .
-
-  PUBLIC SECTION.
-  METHODS WALK REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_08_class_leon_pwc IMPLEMENTATION.
-  METHOD walk.
-    RV_WALK = 'EL LEON ANDA'.
-  ENDMETHOD.
-
+CLASS ZCL_08_CLASS_LEON_PWC IMPLEMENTATION.
 ENDCLASS.

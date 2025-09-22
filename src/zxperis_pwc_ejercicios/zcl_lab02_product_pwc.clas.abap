@@ -1,39 +1,13 @@
-CLASS zcl_lab02_product_pwc DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_LAB02_PRODUCT_PWC definition
+  public
+  create private .
 
-
-
-  PUBLIC SECTION.
-
-  METHODS SET_PRODUCT
-        IMPORTING I_PRODUCT TYPE MATNR.
-
-  METHODS SET_CREATIONDATE
-        IMPORTING I_CREATION_DATE TYPE ZDE_PWC_DATE.
-
-
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
-  DATA: PRODUCT TYPE MATNR,
-        CREATION_DATE TYPE ZDE_PWC_DATE.
-
-
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_lab02_product_pwc IMPLEMENTATION.
-  METHOD set_product.
-ME->product = I_PRODUCT.
-  ENDMETHOD.
-
-  METHOD set_creationdate.
-ME->creation_date = I_CREATION_DATE.
-  ENDMETHOD.
-
+CLASS ZCL_LAB02_PRODUCT_PWC IMPLEMENTATION.
 ENDCLASS.

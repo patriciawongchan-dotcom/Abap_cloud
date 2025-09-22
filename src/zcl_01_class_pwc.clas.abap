@@ -1,32 +1,13 @@
-CLASS zcl_01_class_pwc DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_01_CLASS_PWC definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS:  CONSTRUCTOR IMPORTING IV_EMPLOYEE_ID TYPE STRING,
-    GET_EMPLOYEE RETURNING VALUE(RV_EMPLOYEE_ID) TYPE STRING.
-data id type string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    DATA EMPLOYEE_ID TYPE STRING.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_01_class_pwc IMPLEMENTATION.
-
-
-
-METHOD constructor.
-       ME->employee_id = IV_EMPLOYEE_ID.
-  ENDMETHOD.
-
-
-
-
-  METHOD get_employee.
-RV_EMPLOYEE_ID = ME->employee_id.
-  ENDMETHOD.
-
-ENDCLASS..
+CLASS ZCL_01_CLASS_PWC IMPLEMENTATION.
+ENDCLASS.

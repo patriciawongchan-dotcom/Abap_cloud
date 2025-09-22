@@ -1,30 +1,13 @@
-CLASS zcl_clase_pwc_segment DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_CLASE_PWC_SEGMENT definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  INTERFACES if_oo_adt_classrun.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_CLASE_PWC_SEGMENT IMPLEMENTATION.
-
-
-METHOD if_oo_adt_classrun~main.
-
-DATA(lv_string1) = 'El-perro-corre-por-el-prado'.
-
-DATA(lv_palabra) = segment( val = lv_string1 index = 3 sep = '-' ).
-
-out->write( lv_palabra ).
-
-ENDMETHOD.
 ENDCLASS.
